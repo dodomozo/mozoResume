@@ -1,0 +1,272 @@
+/* Competencies Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+
+section {
+    padding-top: 100px;
+}
+
+h2 {
+    margin-bottom: 30px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    color: #e2caca;
+    border-bottom: 3px solid #7e3494;
+}
+
+.skills {
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.p-skills {
+    margin-top: 10px;
+    text-align: center;
+    justify-content: center;
+    color: rgb(201, 194, 194);
+    font-size: 13px;
+}
+
+.prof-skills {
+    margin: 5px;
+    padding: 20px;
+    background-color: rgb(17, 17, 17);
+    box-shadow: 0 5px 18px rgb(24, 23, 23), 0 5px 18px rgb(24, 23, 23);
+    margin-bottom: 50px;
+    border-radius: 15px;
+}
+
+.prof-skills:hover {
+    margin: 5px;
+    padding: 20px;
+    background-color: rgb(17, 17, 17);
+    box-shadow: 0 5px 18px rgb(24, 23, 23), 0 2px 18px rgb(115, 199, 195);
+    margin-bottom: 50px;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+
+.tech-skills {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 28px;
+    margin: 5px;
+    background-color: rgb(17, 17, 17);
+    box-shadow: 0 5px 18px rgb(24, 23, 23), 0 5px 18px rgb(24, 23, 23);
+    margin-bottom: 50px;
+    border-radius: 15px;
+}
+
+.tech-skills:hover {
+    padding-right: 20px;
+    padding-left: 20px; 
+    padding-top: 30px;
+    padding-bottom: 28px;
+    margin: 5px;
+    background-color: rgb(17, 17, 17);
+    box-shadow: 0 5px 18px rgb(24, 23, 23), 0 2px 18px rgb(115, 199, 195);
+    margin-bottom: 50px;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+
+.t-skills {
+    margin-bottom: 5px;
+}
+
+.t-name {
+    text-align: left;
+    color: rgb(155, 151, 151);
+    font-size: 15px;
+}
+
+.t-name p {
+    text-align: right;
+}
+
+strong {
+    color: rgb(169, 177, 103);
+}
+
+.bar {
+    margin-top: -10px;
+    background: #050505;
+    display: block;
+    height: 10px;
+    border: .5px solid rgb(99, 98, 98);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    margin-bottom: 20px;
+}
+
+.bar span {
+    height: 10px;
+    float: left;
+    background: linear-gradient(135deg, rgb(55, 189, 207)0%, #7e3494 100%);
+}
+
+.c {
+    width: 50%;
+    animation: c 3s;
+}
+
+.cpp {
+    width: 55%;
+    animation: cpp 3s;
+}
+
+.python {
+    width: 28%;
+    animation: python 3s;
+}
+
+.mysql {
+    width: 25%;
+    animation: mysql 3s;
+}
+
+.html-css {
+    width: 53%;
+    animation: html-css 3s;
+}
+
+.php {
+    width: 48%;
+    animation: php 3s;
+}
+
+.angular {
+    width: 22%;
+    animation: angular 3s;
+}
+
+.javascript {
+    width: 22%;
+    animation: javascript 3s;
+}
+
+@keyframes c {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes cpp {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 55%;
+    }
+}
+
+@keyframes python {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 28%;
+    }
+}
+
+@keyframes mysql {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 25%;
+    }
+}
+
+@keyframes html-css {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 53%;
+    }
+}
+
+@keyframes php {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 48%;
+    }
+}
+
+@keyframes angular {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 22%;
+    }
+}
+
+@keyframes javascript {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 22%;
+    }
+}
+
+.accomplishments {
+    margin: 5px;
+    padding: 20px;
+    background-color: rgb(17, 17, 17);
+    box-shadow: 0 5px 18px rgb(24, 23, 23), 0 5px 18px rgb(24, 23, 23);
+    margin-bottom: 50px;
+    border-radius: 15px;
+}
+
+.accomplishments:hover {
+    margin: 5px;
+    padding: 20px;
+    background-color: rgb(17, 17, 17);
+    box-shadow: 0 5px 18px rgb(24, 23, 23), 0 2px 18px rgb(115, 199, 195);
+    margin-bottom: 50px;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+
+.my-accomplishments {
+    margin-top: 10px;
+    text-align: center;
+    justify-content: center;
+    color: rgb(201, 194, 194);
+    font-size: 13px;
+}
+
+.my-accomplishments i {
+    color: rgb(139, 224, 230);
+}
+
+.my-accomplishments h5 {
+    color: rgb(221, 231, 230);
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
+.my-accomplishments p {
+    color: rgb(168, 173, 173);
+    font-size: 15px;
+    font-style: italic;
+}
+
+

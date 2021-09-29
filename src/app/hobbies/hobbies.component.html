@@ -1,0 +1,210 @@
+<section class="timeline-section" id="education">
+    <div class="container">
+        <div class="row"> 
+            <div class="col-lg-8">
+                <h2 class="education-title">EDUCATION</h2>
+                <div class="education-container">
+                    <div class="timeline-items">
+                        <div class="timeline-item" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2004 - 2006</div>
+                            <div class="timeline-content">
+                                <h3>Pre-School</h3>
+                                <p>Madangog Day Care Center</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2006 - 2012</div>
+                            <div class="timeline-content">
+                                <h3>Primary</h3>
+                                <p>Kinabag-an Elementary School</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2012 - 2016</div>
+                            <div class="timeline-content">
+                                <h3>Junior High School</h3>
+                                <p>Pangangan National High School</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2016 - 2018</div>
+                            <div class="timeline-content">
+                                <h3>Senior High School</h3>
+                                <p>Pangangan National High School General Academic Strand</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">2018 - present</div>
+                            <div class="timeline-content">
+                                <h3>Undergraduate</h3>
+                                <p>Bohol Island State University - Main Campus</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <h2 class="hobbies-title">HOBBIES & INTERESTS</h2>
+                <div class="hobbies-container">
+                    <div class="row" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="col-lg-4">
+                            <div class="music">
+                                <input type="checkbox" id="music-input">
+                                <label for="music-input">
+                                    <img class="musicRotate" [src] = "images[0]" (click) = "onmusic()">
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-8">
+                            <div class="hb-box active" *ngIf = "music">
+                                <div class="music-box">
+                                    <p>Listening to music</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="col-lg-4">
+                            <div class="v-games">
+                                <input type="checkbox" id="v-games-input">
+                                <label for="v-games-input">
+                                    <img class="v-gamesRotate" [src] = "images[1]" (click) = "onvideo()">
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-8">
+                            <div class="hb-box" *ngIf = "video">
+                                <div class="v-games-box">
+                                    <p>Playing Video Games</p>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="col-lg-4">
+                            <div class="r-trips">
+                                <input type="checkbox" id="r-trips-input">
+                                <label for="r-trips-input">
+                                    <img class="r-tripsRotate" [src] = "images[2]" (click) = "ontrips()">
+                                </label>
+                            </div>                            
+                        </div>
+
+                        <div class="col-lg-8">
+                            <div class="hb-box" *ngIf = "trips">
+                                <div class="r-trips-box">
+                                    <p>Road Trips</p>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="col-lg-4">
+                            <div class="swim">
+                                <input type="checkbox" id="swim-input">
+                                <label for="swim-input">
+                                    <img class="swimRotate" [src] = "images[3]" (click) = "onswim()">
+                                </label>
+                            </div>                            
+                        </div>
+
+                        <div class="col-lg-8">
+                            <div class="hb-box" *ngIf = "swim">
+                                <div class="swim-box">
+                                    <p>Swimming</p>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="col-lg-4">
+                            <div class="b-games">
+                                <input type="checkbox" id="b-games-input">
+                                <label for="b-games-input">
+                                    <img class="b-gamesRotate" [src] = "images[4]" (click) = "onboard()">
+                                </label>
+                            </div>                            
+                        </div>
+
+                        <div class="col-lg-8">
+                            <div class="hb-box" *ngIf = "board">
+                                <div class="b-games-box">
+                                    <p>Playing Boardgames</p>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="col-lg-4">
+                            <div class="movie">
+                                <input type="checkbox" id="movie-input">
+                                <label for="movie-input">
+                                    <img class="movieRotate" [src] = "images[5]" (click) = "onmovie()">
+                                </label>
+                            </div>                            
+                        </div>
+                        
+                        <div class="col-lg-8">
+                            <div class="hb-box" *ngIf = "movie">
+                                <div class="movie-box">
+                                    <p>Watching Movies</p>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="col-lg-4">
+                            <div class="anime">
+                                <input type="checkbox" id="anime-input">
+                                <label for="anime-input">
+                                    <img class="animeRotate" [src] = "images[6]" (click) = "onanime()">
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-8">
+                            <div class="hb-box" *ngIf = "anime">
+                                <div class="anime-box">
+                                    <p>Watching Anime Series</p>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="col-lg-4">
+                            <div class="manga">
+                                <input type="checkbox" id="manga-input">
+                                <label for="manga-input">
+                                    <img class="mangaRotate" [src] = "images[7]" (click) = "onmanga()">
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-8">
+                            <div class="hb-box" *ngIf = "manga">
+                                <div class="manga-box">
+                                    <p>Reading Manga</p>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>	
+</section>

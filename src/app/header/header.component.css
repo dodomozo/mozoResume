@@ -1,0 +1,49 @@
+/* header styles */
+
+.navbar {
+    background: rgb(37, 36, 36);
+    border-bottom: rgb(197, 182, 182);
+    border-top: rgb(197, 182, 182);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.navbar-brand {
+    font-weight: bolder;
+    font-size: 20px;
+    margin-left: 60px;
+    padding: 7px;
+}
+
+.navbar-brand:hover {
+    transition-duration: 0.2s;
+    border-bottom: 2px solid rgb(233, 134, 134);
+    color: rgb(201, 173, 238);
+    padding-bottom: 4px;
+    font-size: 21px;
+    
+}
+
+.collapse {
+    padding-right: 200px;
+}
+
+.nav-item {
+    font-size: 15px;
+    margin-left: 20px;
+    padding: 8px;
+}
+  
+.nav-link:hover {
+    transition-duration: 0.2s;
+    border-bottom: 2px solid rgb(233, 134, 134);
+    color: rgb(223, 202, 14);
+    padding-bottom: 5px; 
+}
+
+.nav-link.active {
+    transition-duration: 0.2s;
+    border-bottom: 2px solid rgb(233, 134, 134);
+    color: rgb(223, 202, 14);
+    padding-bottom: 5px; 
+}

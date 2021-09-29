@@ -1,0 +1,62 @@
+<section id="about" class="about">
+    <div class="container"> 
+        <div class="row">
+            <div class="col-2">
+                <h2 class="about-title">ABOUT ME</h2>
+            </div>
+        </div>
+         
+        <div class="row">
+            <div class="col-lg-4 col-md-12" id="img-container" data-aos="fade-right">
+                <ngb-carousel *ngIf="images">
+                    <ng-template ngbSlide>
+                      <div>
+                        <img [src]="images[0]" alt="Random first slide" class="img-fluid">
+                      </div>
+                    </ng-template>
+                    <ng-template ngbSlide> 
+                      <div>
+                        <img [src]="images[1]" alt="Random second slide" class="img-fluid">
+                      </div>
+                    </ng-template>
+                    <ng-template ngbSlide>
+                        <div>
+                          <img [src]="images[2]" alt="Random third slide" class="img-fluid">
+                        </div>
+                    </ng-template>
+                    <ng-template ngbSlide>
+                        <div>
+                          <img [src]="images[3]" alt="Random fourth slide" class="img-fluid">
+                        </div>
+                      </ng-template>
+                  </ngb-carousel>
+            </div> 
+
+            <div class="col-lg-8 col-md-12">
+                <div class="row" data-aos="fade-left">
+                    <p class="about-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, magni? Consequatur sunt, officia eveniet consequuntur sequi voluptatum! Recusandae optio minima, tenetur alias veniam eveniet excepturi accusamus, cupiditate, aperiam est libero.</p>
+                </div>
+                
+                <div class="row" data-aos="fade-up">
+                    <p class="about-self">
+                        <b><i class="fas fa-file-signature"></i>
+                            Full Name         <span class="tab1"></span></b>John Rey Camilotes Mozo <br>
+                        <b><i class="fas fa-arrow-up"></i>
+                            Age               <span class="tab2"></span></b>22 years old <br>
+                        <b><i class="fas fa-birthday-cake"></i>
+                            Birthday          <span class="tab3"></span></b>July 30, 1999 <br>
+                        <b><i class="fas fa-baby"></i>
+                            Place of Birth    <span class="tab4"></span></b>Bas Dacu, Loon, Bohol, Philippines <br>
+                        <b><i class="fas fa-map-marker-alt"></i>
+                            Current Address   <span class="tab5"></span></b>Madangog, Calape, Bohol, Philippines <br>
+                        <b><i class="fas fa-at"></i>
+                            Email Address     <span class="tab6"></span></b>johnreymozo17@gmail.com <br>
+                        <b><i class="fa fa-phone-alt"></i>
+                            Mobile Number     <span class="tab7"></span></b>0926-986-8895 <br>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

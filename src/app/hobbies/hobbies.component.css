@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto+Condensed:wght@300&display=swap');
+
+.education-title {
+    margin-bottom: 50px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    color: #e2caca;
+    border-bottom: 3px solid #7e3494;
+    width: 20%;
+    padding-top: 100px;
+}
+
+.hobbies-title {
+    margin-bottom: 50px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    color: #e2caca;
+    border-bottom: 3px solid #7e3494;
+    width: 80%;
+    padding-top: 100px;
+}
+
+.education-container {
+    margin: 5px;
+    padding: 50px;
+    background-color: rgb(17, 17, 17);
+    box-shadow: 0 5px 18px rgb(24, 23, 23), 0 5px 18px rgb(24, 23, 23);
+    margin-bottom: 50px;
+    border-radius: 15px;
+}
+
+.education-container:hover {
+    background-color: rgb(17, 17, 17);
+    box-shadow: 0 5px 18px rgb(24, 23, 23), 0 2px 18px rgb(115, 199, 195);
+    transition: 0.3s;
+}
+
+.timeline-items{
+	max-width: 1000px;
+	margin:auto;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+.timeline-items::before{
+	content: '';
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background-color: #266170;
+    box-shadow: 0 5px 18px rgb(24, 23, 23), 0 2px 18px rgb(115, 199, 195);
+	left: calc(50% - 1px);
+}
+.timeline-item{
+	margin-bottom: 20px;
+	width: 100%;
+	position: relative;
+}
+.timeline-item:last-child{
+	margin-bottom: 0;
+}
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+	text-align: right;
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 30px);
+}
+.timeline-dot{
+	height: 16px;
+	width: 16px;
+	background-color: #f3c018;
+    box-shadow: 0 5px 18px rgb(24, 23, 23), 0 2px 18px #f3c018;
+	position: absolute;
+	left: calc(50% - 8px);
+	border-radius: 50%;
+	top:10px;
+}
+.timeline-date{
+	font-size: 18px;
+    font-weight: bold;
+	color: #3a8a83;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	margin:6px 0 15px;
+}
+.timeline-content{
+    background-color: rgb(32, 32, 32);
+    box-shadow: 0 5px 18px rgb(24, 23, 23), 0 5px 10px rgb(0, 0, 0);
+	padding: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+	border-radius: 10px;
+}
+
+.timeline-content:hover {
+    background-color: rgb(32, 32, 32);
+    box-shadow: 0 5px 18px rgb(24, 23, 23), 0 2px 13px rgb(151, 115, 199);
+    transition: 0.2s;
+}
+
+.timeline-content h3{
+    font-size: 20px;
+	color: #fae99d;
+	margin:0 0 10px;
+	text-transform: uppercase;
+	font-weight: 500;
+    font-family: 'Fugaz One', cursive;
+}
+.timeline-content p{
+    color: #bdbcbc;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 22px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* responsive */
+@media(max-width: 767px){
+	.timeline-items::before{
+		left: 7px;
+	}
+	.timeline-item:nth-child(odd){
+		padding-right: 0;
+		text-align: left;
+	}
+	.timeline-item:nth-child(odd),
+	.timeline-item:nth-child(even){
+		padding-left: 37px;
+	}
+	.timeline-dot{
+		left:0;
+	}
+}
+
+.hobbies-container {
+	margin: 20px;
+}
+
+.hb-box {
+	right: -100%;
+	margin: 10px;
+	margin-left: -25px;
+	border-radius: 10px 40px 40px 10px;
+	padding: 10px;
+	background-color: rgb(54, 52, 52);
+    box-shadow: 0 0 15px rgb(77, 150, 146);
+	font-size: 15px;
+	color: #c7d671;
+	text-transform: uppercase;
+	font-weight: 500;
+    font-family: 'Fugaz One', cursive;
+	text-align: center;
+}
+
+img {
+	display: block;
+	margin: 10px;
+	border-radius: 50%;
+	width: 60px;
+	padding: 10px;
+	background-color: rgb(32, 32, 32);
+    box-shadow: 0 0 15px #a651f5;
+}
+
+img:hover {
+	box-shadow: 0 0 20px #519ef5;
+	transition: 0.2s;
+	cursor: pointer;
+}
+
+#music-input {
+	display: none;
+  }
+
+.musicRotate {
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
+
+	-moz-transition-property: -moz-transform;
+	-webkit-transition-property: -webkit-transform;
+	-o-transition-property: -o-transform;
+	-ms-transition-property: -ms-transform;
+	transition-property: transform;
+}
+
+#music-input:checked + label img.musicRotate {
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform: rotate(360deg);
+	box-shadow: 0 0 20px #519ef5;
+}
+
+#v-games-input {
+	display: none;
+}
+
+.v-gamesRotate {
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
+
+	-moz-transition-property: -moz-transform;
+	-webkit-transition-property: -webkit-transform;
+	-o-transition-property: -o-transform;
+	-ms-transition-property: -ms-transform;
+	transition-property: transform;
+}
+
+#v-games-input:checked + label img.v-gamesRotate {
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform: rotate(360deg);
+	box-shadow: 0 0 20px #519ef5;
+}
+
+#r-trips-input {
+	display: none;
+}
+
+.r-tripsRotate {
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
+
+	-moz-transition-property: -moz-transform;
+	-webkit-transition-property: -webkit-transform;
+	-o-transition-property: -o-transform;
+	-ms-transition-property: -ms-transform;
+	transition-property: transform;
+}
+
+#r-trips-input:checked + label img.r-tripsRotate {
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform: rotate(360deg);
+	box-shadow: 0 0 20px #519ef5;
+}
+
+#swim-input {
+	display: none;
+}
+
+.swimRotate {
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
+
+	-moz-transition-property: -moz-transform;
+	-webkit-transition-property: -webkit-transform;
+	-o-transition-property: -o-transform;
+	-ms-transition-property: -ms-transform;
+	transition-property: transform;
+}
+
+#swim-input:checked + label img.swimRotate {
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform: rotate(360deg);
+	box-shadow: 0 0 20px #519ef5;
+}
+
+#b-games-input {
+	display: none;
+}
+
+.b-gamesRotate {
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
+
+	-moz-transition-property: -moz-transform;
+	-webkit-transition-property: -webkit-transform;
+	-o-transition-property: -o-transform;
+	-ms-transition-property: -ms-transform;
+	transition-property: transform;
+}
+
+#b-games-input:checked + label img.b-gamesRotate {
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform: rotate(360deg);
+	box-shadow: 0 0 20px #519ef5;
+}
+
+#movie-input {
+	display: none;
+}
+
+.movieRotate {
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
+
+	-moz-transition-property: -moz-transform;
+	-webkit-transition-property: -webkit-transform;
+	-o-transition-property: -o-transform;
+	-ms-transition-property: -ms-transform;
+	transition-property: transform;
+}
+
+#movie-input:checked + label img.movieRotate {
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform: rotate(360deg);
+	box-shadow: 0 0 20px #519ef5;
+}
+
+#anime-input {
+	display: none;
+}
+
+.animeRotate {
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
+
+	-moz-transition-property: -moz-transform;
+	-webkit-transition-property: -webkit-transform;
+	-o-transition-property: -o-transform;
+	-ms-transition-property: -ms-transform;
+	transition-property: transform;
+}
+
+#anime-input:checked + label img.animeRotate {
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform: rotate(360deg);
+	box-shadow: 0 0 20px #519ef5;
+}
+
+#manga-input {
+	display: none;
+}
+
+.mangaRotate {
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
+
+	-moz-transition-property: -moz-transform;
+	-webkit-transition-property: -webkit-transform;
+	-o-transition-property: -o-transform;
+	-ms-transition-property: -ms-transform;
+	transition-property: transform;
+}
+
+#manga-input:checked + label img.mangaRotate {
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform: rotate(360deg);
+	box-shadow: 0 0 20px #519ef5;
+}
